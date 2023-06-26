@@ -10,7 +10,7 @@ while (number > 0)
 {
     int ostatok = number % 10;
     i += ostatok;
+    number /= 10;
 }
-int result = number + i;
 
-Consol.eWriteLine(result);
+Console.WriteLine($"Сумма цифр в числе: {i}");
