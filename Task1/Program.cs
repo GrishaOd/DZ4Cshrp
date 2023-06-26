@@ -2,9 +2,9 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16*/
 
-double GivePower(int A, int B)
+double GivePower(int x, int y)
 {
-    double result = Math.Pow(A, B);
+    double result = Math.Pow(x, y);
     return result;
 }
 
@@ -14,4 +14,4 @@ Console.Write("Введите число B: ");
 int B = int.Parse(Console.ReadLine());
 
 double itog = GivePower(A, B);
-Console.Write($"число A в степени B равно {itog}");
+Console.Write($"{A} в степени {B} равно {itog}");
