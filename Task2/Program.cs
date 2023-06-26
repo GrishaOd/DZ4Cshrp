@@ -3,8 +3,8 @@
 82 -> 10
 9012 -> 12*/
 
-Console.Write("Введите число: ");
-int number = int.Parse(Console.ReadLine());
+int GiveSum (int number)
+{
 int i = 0;
 while (number > 0)
 {
@@ -12,5 +12,16 @@ while (number > 0)
     i += ostatok;
     number /= 10;
 }
-
 Console.WriteLine($"Сумма цифр в числе: {i}");
+return i;
+}
+Console.Write("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+int result = GiveSum(num);
+Console.WriteLine(result);
+
+
+
+
+
+
